@@ -1,0 +1,10 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+header,footer{
+    background-color: dimgray;
+}
+.title {
+    color: white;
+}
