@@ -3,8 +3,45 @@ body{
     font-size: 18px;
 }
 header,footer{
-    background-color: dimgray;
+    background-color: rgb(20, 121, 161);
 }
-.title {
+.site-title {
     color: white;
 }
+#my-image{ 
+    box-shadow: 0px 0px 2px 1px black;
+
+}
+aside li{
+    list-style: square;
+
+}
+aside li:nth-child(2n+1){
+    background-color: paleturquoise;
+}
+nav li{
+list-style: none;
+padding-top: 10px;
+
+
+
+}
+.site-title nav li a{
+    text-decoration: none;
+    background-color: paleturquoise;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+   
+}
+.site-title nav li a:hover{
+    text-decoration: none;
+    background-color: rgb(68, 133, 133);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+   
+}
+
