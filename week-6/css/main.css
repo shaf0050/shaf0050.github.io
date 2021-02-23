@@ -1,0 +1,119 @@
+body{
+    color: darkslategray !important;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: white;
+}
+/* 0001 */
+p{
+    background-color: lightblue;
+
+    
+    /* selecting multiple elements to apply same styles */
+}
+h1,h2,h3,h4{
+    text-decoration: underline;
+}
+/* Specificity 0002 */
+nav ul{
+    list-style: none;
+}
+nav ul a{
+    color: darkslategray;
+    text-decoration: none;
+}
+/* class name selector */
+/* SPECIFICITY 0010 */
+.orange-link{
+    background-color: darkslategray;
+    color: orange;
+    text-decoration: none;
+}
+/* id selector */
+/* specificity 0100 */
+#treatofweek{
+    background-color: orange;
+
+}
+/* avoid using id for styling, use classes mostly */
+.large-text{
+    font-size: 20px;
+}
+article>p{
+    /* Typography Properties */
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-transform: lowercase;
+    text-align: center;
+    word-spacing: 12px;
+    font-style: italic;
+    
+
+}
+h3+ul{
+    border: 1px solid black;
+}
+a[href="#treatofweek"]{
+    font-weight: bold;
+}
+[title*="Executive"]{
+    background-color: yellow;
+
+}
+/* using psrudo Classes
+syyling Navigation */
+
+nav ul a,
+nav ul a:link,
+nav ul a:visited{
+    background-color: orange;
+    /* horizontal vertical blur spread color */
+    box-shadow: -2px 2px 4px 2px black;
+}
+nav ul a:hover,
+nav ul a:focus{
+    text-decoration: underline;
+}
+nav ul a:active{
+    box-shadow: 0 0 4px 2px black;
+
+}
+aside ul li:first-child {
+ font-weight: bold;
+}
+
+section ol li:last-child{
+    font-weight: bold;
+
+}
+/* nth-child using formula 
+n= 0,1,2,3,4,5,..
+even= 2n=0,2,4,6,8....
+odd= 2n+1= 1,3,5,7,9....*/
+
+dl ul li:nth-child(odd){
+    background-color: white;
+}
+/* CSS Specificity */
+/* Specificity 0002 */
+body footer{
+    background-color:rgb(0, 0, 0);
+  }
+  /* Specificity 0001 */
+  footer{
+      background-color: sandybrown;
+      padding: 20px;
+  }
+  /* Specificity 0010 */
+  .site-footer{
+      background-color: cornflowerblue;
+  }
+/* *********************** */
+/* Specificity 0011 */
+footer.site-footer{
+    background-color: rgba(0, 0, 0, 0.2)
+}
+
+
