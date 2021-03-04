@@ -1,18 +1,89 @@
 html{
     font-size: 16px;
 }
+
 body{
     background-color: #aad4cf;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.container1 img{
+    font-family: Arial, Helvetica, sans-serif;
     
     
 }
+main{
+    width: 1024px;
+    height: 100%;
+    margin: auto;
+    background-color: #d0e6e3;
+    padding-left: 10px;
+}
+
+
+.container1 h2{
+    font-size: 3rem;
+    color: white;
+    font-weight:525;
+    position: absolute;
+    top: 155px;
+    left: 40%;
+}
+
+header nav ul{
+    margin-top: -2px;
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;   
+}
+
+nav li{
+   text-align: center;
+    padding-top: 10px;
+   width: 320px;
+   height: 40px;
+   
+
+}
+#story{
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+nav li a{
+    text-decoration: none;
+   text-align: center;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    color: black;
+
+}
+nav li a:hover{
+    color:darkslategrey;
+}
 
 
 
 
+article h2{
+    padding-left: 10px;
+}
+
+.to-left img{
+    height: 230px;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.to-left p {
+    padding-left: 30px;
+    width: 950px;
+}
+
+fieldset{
+    padding-left: 10px;
+}
+#yname,#email,#message{
+    width: 98%;
+}
 
 .button{
     background-color:#aad4cf;
