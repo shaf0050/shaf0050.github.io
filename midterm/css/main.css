@@ -29,7 +29,7 @@ main{
     left: 40%;
 
 }
-
+/* ********** navigation*********** */
 header nav ul{
     list-style: none;
     text-decoration: none;
@@ -58,6 +58,7 @@ nav li a{
 nav li a:hover{
     color:darkslategrey;
 }
+/* **********end of navigation********* */
 
 /* ******* end of header *** */
 
@@ -121,7 +122,7 @@ fieldset form p{
     padding-bottom: 20px;
 }
 .select p{
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 
 #yes, #no, #maybe {
