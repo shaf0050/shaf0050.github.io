@@ -2,6 +2,10 @@ html{
     font-size: 16px;
 }
 
+*{
+    margin: 0; 
+}
+/* *******************styling background color and adding font family**************** */
 body{
     background-color: #aad4cf;
     font-family: Arial, Helvetica, sans-serif;
@@ -12,22 +16,21 @@ main{
     width: 1024px;
     height: 100%;
     margin: auto;
-    background-color: #d0e6e3;
-    padding-left: 10px;
+    background-color: #d0e6e3; 
 }
 
-
+/********header*****/
 .container1 h2{
     font-size: 3rem;
     color: white;
-    font-weight:525;
+    font-weight:normal;
     position: absolute;
-    top: 155px;
+    top: 24%;
     left: 40%;
+
 }
 
 header nav ul{
-    margin-top: -2px;
     list-style: none;
     text-decoration: none;
     display: flex;
@@ -36,55 +39,102 @@ header nav ul{
 }
 
 nav li{
-   text-align: center;
+    text-align: center;
     padding-top: 10px;
-   width: 320px;
-   height: 40px;
-   
-
+    width: 380px;
+    height: 40px;
 }
 #story{
     border-left: 2px solid black;
-    border-right: 2px solid black;
+    border-right: 2px solid black; 
 }
 
 nav li a{
     text-decoration: none;
-   text-align: center;
     font-size: 1.3rem;
     font-weight: lighter;
     color: black;
-
 }
 nav li a:hover{
     color:darkslategrey;
 }
 
+/* ******* end of header *** */
 
-
-
-article h2{
-    padding-left: 10px;
+/*********** article********** */
+article{
+    padding-top: 10px;
 }
 
-.to-left img{
+
+/****** Spacing of h2 headings*****/
+h2{
+    padding-left: 10px;
+    padding-top: 20px;
+    
+}
+.life_starfish{
+    padding-top: 10px;}
+
+.life_starfish img{
     height: 230px;
     float: left;
     padding-left: 10px;
     padding-right: 10px;
 }
-.to-left p {
+.life_starfish p {
     padding-left: 30px;
     width: 950px;
 }
+/* ***********end of article************ */
 
+.facts{
+    padding-top: 20px;
+}
+
+/* *****************fieldset************** */
 fieldset{
     padding-left: 10px;
+    margin: 10px;
 }
-#yname,#email,#message{
-    width: 98%;
+
+fieldset form p{ 
+    padding-top: 10px;
+
+}
+
+#yname,#email{
+    width: 99%;
+    height: 25px; 
+}
+#message{
+    width: 99%;
+    height: 60px;
+}
+
+#yname, #email, #message {
+    margin-top: 3px;
+    margin-bottom: 7px;
+}
+
+.select {
+    padding-bottom: 20px;
+}
+.select p{
+    font-size: 1.2em;
+}
+
+#yes, #no, #maybe {
+    margin-right: 10px;
 }
 
 .button{
-    background-color:#aad4cf;
+    background-color:#d0e6e3;
+    width: 60px;
+    height: 40px;
+}
+
+/* *****************end of fieldset************** */
+.site-footer p{
+    text-align: right;
 }
