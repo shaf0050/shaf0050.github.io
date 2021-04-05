@@ -196,137 +196,144 @@ footer a:hover{
 /* ------------------------------------------
 Climate Action Page
 ------------------------------------------ */
-.card{
-    border: 1px solid #00AADD;
+.card {
+    border: 1px solid #00ADD8;
     border-radius: 4px;
     margin-bottom: 1em;
+}
+.card img {
+    width: 100%;
+}
 
-}
-.card img{
-width: 100%;
-}
-.card h3{
+.card h3 {
     margin-top: 0;
 }
-.card .info{
+.card .info {
     padding: 1em;
 }
-.btn{
+
+.btn {
     text-decoration: none;
     color: inherit;
-    border: solid 1px gray;
+    border: solid 1px grey;
     padding: 20px;
     border-radius: 4px;
-    display:inline-block;
+    display: inline-block
 }
-.btn:hover{
-    background-color:#00AADD;
+
+.btn:hover {
+    background-color: #00ADD8;
 
 }
-/* news section */
-.news img{
-    width:100;
+/* 
+news section
+*/
+
+.news img {
+    width:100%;
 }
 
 
 /* Desktop styles */
-@media screen and (min-width: 600px){
+@media screen and (min-width: 600px) {
     html{
         font-size: 16px;
     }
     .mobile-logo{
         display: none;
     }
+
     .desktop-logo{
-        display: inline-block;
+        display:inline-block;
         max-width: 300px;
     }
-    .banner{
+    .banner {
         background-image: url("../img/desktop-banner.jpg");
     }
-    .banner h1{
-        color: white;
-
+    .banner h1 {
+        color: #fff;
     }
-    /* main nav */
-.nav-list{
-    display: flex;
+/* Main Nav */
+    .nav-list {
+        display: flex;
+    }
+    .nav-list li{
+        flex: 1;
+        border-bottom: none;
+        border-right: 1px solid gray;
+    }
 
-}
-.nav-list li{
-    flex: 1;
-    border-bottom: none;
-    border-right: 1px solid gray;
-}
 
     /* App section */
     .app img {
-        width: 40%;
+        width:40%;
         float: left;
         margin-right: 1rem;
     }
     .app .btn{
         float: right;
     }
-
-/* ------------------------------------------
-Climate Action Page
------------------------------------------- */
-
-
-
-
     
+    
+
+
+        /*
+---------------------------------------
+Climate Action Page CSS
+---------------------------------------
+*/
+
+
+}
+
+@media screen and (min-width: 800px) {
+    .actions-list li {
+        max-width: 20%;
+    }
+
 
 /* ------------------------------------------
 Climate Action Page
 ------------------------------------------ */
 .cards{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1em;
 }
-.news{
+.news {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows: repeat(3,auto);
-    grid-template-areas: 
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
     "header header"
     "left right1"
     "left right2"
     ;
     gap: 1em;
 }
-.news h2{
+.news h2 {
     grid-area: header;
 }
-.left{
+.left {
     grid-area: left;
 }
-.right1:nth-child(1){
+.right:nth-child(1) {
     grid-area: right1;
 }
-.right:nth-child(2){
-    grid-area:right2;
+.right:nth-child(2) {
+    grid-area: right2;
 }
-.news .right{
+.news .right {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 1em;
-
-    }
-.news.right img{
-    grid-row-start:1 ;
-    grid-row-end: 3;
-
 }
-.news.right h3{
-    margin-top:0;
+.news .right img {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.news .right h3 {
+    margin-top: 0;
     font-size: 1.5rem;
 }
-}
-
-@media screen and (min-width: 800px){
-    .actions-list li{
-        max-width: 20%;}
-    }
+} 
