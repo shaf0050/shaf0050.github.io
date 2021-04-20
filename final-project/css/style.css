@@ -199,7 +199,7 @@ header{
     position: absolute;
     left: 0px;
     top: 130px;
-    /* z-index: 3; */
+    
 }
 .banner-text *{
     margin: 1rem;
