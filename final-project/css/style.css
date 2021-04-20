@@ -325,10 +325,14 @@ header{
 
 }
 button{
-    background-color: 222222;
+    background-color: #222222;
     color:#c78b06;
     padding: 0.5em 1em;
     margin-top: 0.5em;
+}
+.contact-container button:hover{
+    background-color: gray;
+    color: white;
 }
 table, th, td{
     border: 1px solid black;
@@ -516,15 +520,8 @@ height: 92%;
 /* -------------------------------
 Contact Us
 ------------------------------- */
-.contact-container button{
-    background-color: #222222;
-    
-    
-}
-.contact-container button:hover{
-    background-color: gray;
-    color: white;
-}
+
+
 .contact-container{
     max-width: 1200px;
     margin: auto;
