@@ -112,7 +112,7 @@ footer{
     margin-inline: 50px;
   }
   #nav a:hover{
-    color: rgb(255, 251, 0);
+    color: yellow;
   }
   #about h2 {
     text-align: center;
