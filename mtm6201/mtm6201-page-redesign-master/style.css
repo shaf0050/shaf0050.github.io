@@ -15,7 +15,6 @@ body {
   width: auto;
   margin: 0px auto;
   padding: 30px;
-
   border: 3px solid rgb(0, 0, 0);
   background-color: rgb(0, 0, 0);
 
@@ -55,7 +54,7 @@ body {
 
 section#home {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: center;
 
 }
@@ -71,12 +70,17 @@ section#home {
 #about {
   font-family: 'Poppins', sans-serif;
   text-align: center;
+  font-size: 1.2rem;
 
 }
-/* styling about img- Specificity 0011*/
+/* styling about img- Specificity 0011 (chaning the size in Mobile view)*/
 
-.about-image img {
+img.about-image {
   align-items: center;
+  padding-left: 25px;
+  
+
+  width: 100px;
 }
 /* ******************** */
 
@@ -84,11 +88,14 @@ section#home {
 p {
   color: white;
   text-align: center;
+  font-family:'Poppins', sans-serif ;
 }
-
+#contact p{
+  font-size: 1.2rem;
+}
 /* styling form - Specificity 0011*/
 form.contact-form {
-  padding: 30px;
+  padding: 60px;
   width: auto;
   margin: 0px auto;
 }
@@ -101,9 +108,8 @@ footer{
 @media screen and (min-width: 760px) {
 
   #nav a {
-    /* padding: 20px; */
     display: inline-block;
-    margin-inline: 100px;
+    margin-inline: 50px;
   }
   #nav a:hover{
     color: rgb(255, 251, 0);
@@ -112,8 +118,15 @@ footer{
     text-align: center;
     padding-left: 250px;
   }
+
+  /* styling about img- Specificity 0011 (chaning the size in desktop view)*/
+  img.about-image {
+    float: left;
+    width: 250px;
+  }
   #contact p{
     padding: 30px;
+    font-size: 16px;
   
   }
   
