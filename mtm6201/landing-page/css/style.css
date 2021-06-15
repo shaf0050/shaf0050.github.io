@@ -68,7 +68,7 @@ main{
 *:before{
     box-sizing: inherit;
 }
-
+/* Adjusting font sizes for mobile version */
 h1{
     font-size: 4rem;
     font-weight: 700;
