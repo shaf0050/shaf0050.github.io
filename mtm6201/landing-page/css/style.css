@@ -164,6 +164,7 @@ header{
     border-radius: 10px;
     border: none;
     transition-duration: 200ms;
+    width: 100%;
     
 }
 .apply button:hover{
@@ -340,6 +341,7 @@ footer{
     position: relative;
     margin-top: 2rem;
 }
+/* moving image to back using z-index */
 .banner-img{
     z-index: -1;
     max-width: 800px;
