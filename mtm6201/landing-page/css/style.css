@@ -89,9 +89,12 @@ a{
 header{
     padding: 1rem 2rem;
 }
-main{
-    padding: 1.80rem;
+.banner-text{
+    margin:30px;
 }
+/* main{
+    padding: 1.80rem;
+} */
 .container1 img{
     width: 100px;
     height: auto;
@@ -100,6 +103,9 @@ main{
 .apply p{
     font-size: 1rem;
     padding-top: .75rem;
+}
+.txt{
+    display: none;
 }
 .apply{
     padding: 1.75rem;
@@ -110,20 +116,20 @@ main{
 }
 
       
-}
-.form form{
+
+.apply.form form{
     display: flex;
     flex-direction: column;
     
 }
-.form form div:nth-child(1){
+.apply.form form div:nth-child(1){
+    order: -4;
+}
+.apply.form form div:nth-child(2){
     order: -3;
 }
-.form form div:nth-child(2){
+.apply.form form div:nth-child(4){
     order: -2;
-}
-.form form div:nth-child(4){
-    order: -1;
 }
 .form input{
     padding: 0.8rem;
@@ -247,3 +253,137 @@ footer h3,p{
 .media .fb{
     border-radius: 50%;
 }
+/***************** Tablet styles ***************/
+@media screen and (min-width: 640px){
+    
+.banner-img{
+    width: 600px;
+    padding-left: 80px;
+    
+}
+.banner h1{
+    font-size: 8rem;
+}
+
+.banner p{
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-top: 30px;
+}
+.form input{
+    padding: 0.8rem;
+    width: 97%;
+    
+}
+.apply.form form:nth-child(3){
+    order: -1;
+}
+.apply button{
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #57eeab;
+    padding: 1rem 15.2rem;
+    border-radius: 10px;
+    border: none;
+    transition-duration: 200ms;
+    
+}
+.btn p{
+    text-align: center;
+}
+
+footer{
+    flex-direction: row;
+
+}
+.footer-details{
+    flex-basis: 100%;
+}
+.footer-form{
+    align-items: center;
+    justify-content: flex-start;
+}
+.footer-form div:nth-child(1){
+    flex-basis: calc(20% - 1rem);
+    
+}
+.footer-form div:nth-child(2){
+    flex-basis: calc(40% - 1rem);
+    padding-left: 10px;
+
+}
+
+.footer-form div:nth-child(3){
+    flex-basis: calc(30% - 1rem);
+    padding-left: 10px;
+
+}
+.media{
+    padding-left: 20%;
+}
+.media a{
+
+    padding: 1rem 1rem 1rem 1rem;
+    
+}
+
+}
+
+/*********************** styling desktop-site******************** */
+
+@media screen and (min-width: 1280px){
+
+.container2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    position: relative;
+    margin-top: 2rem;
+}
+.banner-img{
+    z-index: -1;
+    max-width: 800px;
+    margin: 0 -10rem;
+}
+
+.apply{
+    margin: 0 3rem 2rem 0;
+}
+.txt{
+    display: inline;
+}
+.apply p{
+    font-size: medium;
+}
+.apply button{
+   
+    padding: 1rem 9rem;
+}
+.footer-details{
+    flex-basis: 50%;
+}
+.apply p{
+    font-size: 1.1rem;
+}
+footer p{
+    margin: 0.5rem 0;
+}
+.media{
+    padding-top: 10px;
+    display: flex;
+}
+.media a:nth-child(1){
+    order: 1;
+
+}
+.media a:nth-child(4){
+    order: 2;
+
+}
+.media.fb{
+    border-radius: initial;
+}
+
+
+}
+
+
