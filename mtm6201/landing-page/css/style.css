@@ -279,6 +279,7 @@ footer h3,p{
 .form form div:nth-child(4){
     order: -1;
 }
+/* adjusting button to tablet style */
 .apply button{
     font-size: 1.5rem;
     font-weight: bold;
@@ -305,6 +306,7 @@ footer{
     align-items: center;
     justify-content: flex-start;
 }
+/* resizing form using nth child and flex-basis */
 .footer-form div:nth-child(1){
     flex-basis: calc(20% - 1rem);
     
@@ -389,5 +391,5 @@ footer p{
 
 
 }
-
+/* ***********************************css end********************* */
 
