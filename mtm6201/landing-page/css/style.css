@@ -332,8 +332,9 @@ p {
 }
 
 .footer-form div:nth-child(2) {
-    flex-basis: calc(70% - 1rem);
+    flex-basis: calc(60% - 1rem);
     margin: 0 1rem 0 0;
+    padding-left: 5px;
 }
 
 .footer-form div:nth-child(3) {
@@ -432,6 +433,7 @@ p {
     .footer-form {
         align-items: center;
         justify-content: flex-start;
+        
     }
 
     /* resizing form using nth child and flex-basis */
