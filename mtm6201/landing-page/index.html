@@ -35,7 +35,7 @@
     <div class="apply">
         <h2>Apply Now</h2>
         <p>Enter your info below <span class="info"></span><span class="txt">to get started.</span></p>
-
+<!-- Using divs for forms : easy to work on -->
         <div class="form">
             <form action="#">
                 <div><label for="fname"></label>
@@ -56,11 +56,11 @@
                     <input type="email" id="email" name="email" placeholder="Email Address" required>
                 </div><br>
 
-                <!-- ****************Checkbox ****************-->
+                <!-- ****************Checkbox inside div could help me arrange it later ****************-->
                 <div class="checkbox">
                     <input type="checkbox" id="terms" name="terms" value="terms">
-                    <!-- <label for="terms"> I agree to dash terms</label> -->
-                    <span>I agree to dash terms</span>
+                    <label for="terms"> I agree to dash terms</label>
+                    
                 </div>
                 <div class="btn">
                     <button type="submit">DRIVE WITH US</button>
@@ -103,7 +103,8 @@
             </div>
 
             <div class="media">
-                <a href="facebook"> <img src="./images/icons/facebook.svg" alt="fb" class="fb"></a>
+                <!-- adding class to fb : later i can style border radious -->
+                <a href="facebook"> <img src="./images/icons/facebook.svg" alt="fb" class="fb"></a>  
                 <a href="instagram"><img src="./images/icons/instagram.svg" alt="insta"></a>
                 <a href="twitter"><img src="./images/icons/twitter.svg" alt="twitter"></a>
                 <a href="linkedin"><img src="./images/icons/linkedin.svg" alt="linkedin"></a>

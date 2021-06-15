@@ -116,19 +116,19 @@ header{
 }
 
       
-
-.apply.form form{
+/* using flex to arrange apply now */
+.form form{
     display: flex;
     flex-direction: column;
     
 }
-.apply.form form div:nth-child(1){
+.form form div:nth-child(1){
     order: -4;
 }
-.apply.form form div:nth-child(2){
+.form form div:nth-child(2){
     order: -3;
 }
-.apply.form form div:nth-child(4){
+.form form div:nth-child(4){
     order: -2;
 }
 .form input{
@@ -275,15 +275,16 @@ footer h3,p{
     width: 97%;
     
 }
-.apply.form form:nth-child(3){
+.form form div:nth-child(4){
     order: -1;
 }
 .apply button{
     font-size: 1.5rem;
     font-weight: bold;
     background-color: #57eeab;
-    padding: 1rem 15.2rem;
+    padding: 1rem 12.2rem;
     border-radius: 10px;
+    width: 100%;
     border: none;
     transition-duration: 200ms;
     
@@ -356,7 +357,8 @@ footer{
 }
 .apply button{
    
-    padding: 1rem 9rem;
+    padding: 1rem 2rem;
+    width: 100%;
 }
 .footer-details{
     flex-basis: 50%;
