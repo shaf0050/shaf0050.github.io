@@ -56,9 +56,12 @@ html{
 
 
 /* ************ CSS RESET********* */
-/* Mobile */
+/* Mobile First Index */
 
-
+html{
+	font-family: 'Roboto', sans-serif;;
+}
+/* Hiding the header image for mobile view */
 .banner {
 	display: none;
 }
@@ -72,7 +75,7 @@ html{
 	margin-left: auto;
 	margin-right: auto;
 }
-
+/*Aligning the nav elements to center using text-align, removed decoration of navigation and adding background color */
 .navigation a {
 	padding: 10px 17.2px 10px 25px;
 	text-decoration: none;
@@ -81,6 +84,7 @@ html{
 	color: black;
 	font-weight: bold;
 }
+/* gave the hover a basic transition using border-radius and transition */
 .navigation a:hover {
 	background-color: darkgrey;
 	border-radius: 10px;
@@ -113,7 +117,7 @@ footer {
 	padding: 15px 0px 0px 0px;
 	text-align: right;
 }
-/* TABLET STYLES */
+/* ********************TABLET STYLES *************/
 
 
 
@@ -123,11 +127,12 @@ footer {
 	display: block;
 	width: 100%;
 }
+/* Aligned logo  */
 .logo {
 	position: absolute;
 	top: 120px;
 }
-
+/* moved the nav elements to the using "flex-end" */
 .navigation {
 	margin-top: 10px;
 	justify-content: flex-end;
@@ -145,6 +150,8 @@ footer {
 .content {
 	padding-top: 50px;
 }
+/* placed text and images side to side using flex elements and float
+created arranged some elements together for the easy flow of work. And used row-reverse to revese the elements. */
 .container-left  {
 	background-color: rgb(236, 236, 236);
 	display: flex;
@@ -168,7 +175,7 @@ footer {
 	float: right;
 }
 }
-/* Desktop */
+/******************** Desktop  Styles*************/
 
 @media screen and (min-width: 770px) {
 
@@ -201,6 +208,7 @@ footer {
 		background-color: white;
 		padding: 0px 0px 50px 0px;
 	}
+	/* used the flex properties to design items in a row */
 	.container-right {
 		background-color: rgb(240, 240, 240);
 		display: flex;
@@ -242,6 +250,7 @@ footer {
 	background-color: lightgrey;
 	border-radius: 15px;
 }
+/*Adding a basic animation to product hover using background-color and transition  */
 .product:hover {
 	background-color: darkgrey;
 	transition: 0.7s;
@@ -270,13 +279,14 @@ footer {
 	transition: 0.5s;
 	border: 2px solid black;
 }
+/****************** Tablet*********** */
 
 @media screen and (min-width: 361px){
 	.logo {
 		position: absolute;
 		top: 120px;
 	}
-	
+	/*  using flex-end to pack the items to end of the container */
 	.navigation {
 		margin-top: 10px;
 		justify-content: flex-end;
@@ -291,6 +301,7 @@ footer {
 		border-radius: 10px;
 		transition: 0.5s;
 	}
+	/* arranging the images and texts by the help of  grid area and nth child  for a easy flow of work. */
 
 	.product-container {
 		margin-top: 85px;
@@ -328,6 +339,7 @@ footer {
 
 
 }
+/* ***************Desktop************* */
 @media screen and (min-width: 771px){
 	.logo {
 		height: 350px;
@@ -339,7 +351,7 @@ footer {
 		font-size: 18px;
 		padding: 10px 70px 10px 60px;
 	}
-
+/* arranging the images and texts by the help of  grid area and nth child  for a easy flow of work. */
 	.product-container {
 		margin-top: 85px;
 		max-width: 770px;
@@ -410,7 +422,7 @@ form input {
 	transition: 0.5s;
 	border: 2px solid black;
 }
-
+/******************** Tablet Styles*********** */
 @media screen and (min-width: 361px) {
 	.form-container {
 		margin: 30%
@@ -431,13 +443,15 @@ form input {
 		transition: 0.5s;
 		border: 2px solid black;
 	}
+	/* Adding a location to the website */
 	.map iframe {
 		margin: 20%;
 		margin-top: -150px;
 	}
 }
-
+/****************** Desktop Styles*************** */
 @media screen and (min-width: 771px) {
+	/* using display: flex property to sets the flexible length on flexible items */
 	.form-map {
 		display: flex;
 	}
