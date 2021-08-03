@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Bootstrap This! | Nitheesh Shafi Kumar</title>
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <!-- Hamburger button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- nav bar for mobile -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Content
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#typos">Typography</a></li>
+                            <li><a class="dropdown-item" href="#images">Images</a></li>
+                            <li><a class="dropdown-item" href="#figures">Figures</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Utilities
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#background">Background</a></li>
+                            <li><a class="dropdown-item" href="#colors">Colors</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Layout
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#containers">Containers</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Components
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#navigationbar">Navigation Bar</a></li>
+                            <li><a class="dropdown-item" href="#buttons">Buttons</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <!-- Main -->
+    <div class="container">
+        <div class="row mt-5">
+            <h1 class="display-3 tx-bold"><strong>Bootstrap</strong></h1>
+            <p class="mt-2">
+                Bootstrap is an open source toolkit for development using HTML, CSS, and JS. It uses our Sass variables
+                and mixins, responsive grid system, extensive pre-built components, and powerful jQuery-based plug-ins
+                to quickly prototype your ideas or build your entire application.
+            </p>
+        </div>
+        <!-- Nav content -->
+        <div class="row mt-3">
+            <h2 class="display-4">Content</h2>
+        </div>
+        <!-- Nav Typography -->
+        <div class="row mt-5">
+            <h2 id="typos">Typography</h2>
+        </div>
+        <div class="row-mt-5">
+            <h4>Headings</h4>
+            <p>All HTML headings are available, from h1 to h6.
+                <br> When you wish to replicate the font styling of a heading but can't utilise the appropriate HTML
+                element, you may use the.h1 through.h6 classes.
+            </p><br>
+            <p>
+                <h1>h1. heading</h1>
+                <h2>h2. heading</h2>
+                <h3>h3. heading</h3>
+                <h4>h4. heading</h4>
+                <h5>h5. heading</h5>
+                <h6>h6. heading</h6>
+            </p>
+        </div>
+        <!-- Images -->
+        <div class="row mt-5">
+            <div class="row mt-3">
+                <h2 id="images">Images</h2>
+            </div>
+            <div class="row mt-3">
+                <p>Documentation and examples for using classes to make pictures responsive (so they never grow larger
+                    than their parent components) and to apply lightweight styles to them.</p><br>
+                <h3>Responsive images</h3>
+                <p>The.img-fluid class in Bootstrap makes images responsive. The picture is given the properties
+                    max-width: 100 percent; and height: auto; so that it scales with the parent element.</p><br>
+                <img src="https://via.placeholder.com/1000x200" alt="placeholder" class="img-fluid">
+            </div>
+
+        </div>
+        <!-- Figures -->
+        <div class="row mt-5">
+            <div class="row mt-3">
+                <h2 id="figures">Figures</h2>
+            </div>
+            <div class="row mt-3">
+                <p>Consider utilising a <figure> whenever you need to present a piece of material, such as a picture
+                        with an optional description.</p><br>
+
+                <p>To give some basic styles for the HTML5 <figure> and <figcaption> elements, use the
+                            included.figure,.figure-img, and.figure-caption classes. Because there is no specific size
+                            for images in figures, be sure to add the.img-fluid class to your <img> to make it
+                            responsive.</p><br>
+                <figure class="figure">
+                    <img src="https://via.placeholder.com/400x300" alt="placeholder"
+                        class="figure-img img-fluid rounded" alt="...">
+                    <figcaption class="figure-caption">Figure component</figcaption>
+                </figure>
+            </div>
+
+        </div>
+        <!-- Section for Utilities -->
+        <div class="row mt-5">
+            <h2 class="display-4">Utilities</h2>
+        </div>
+        <!-- Background & colors -->
+        <div class="row mt-5">
+            <div class="row mt-3">
+                <h2 id="background">Background</h2>
+            </div>
+            <div class="row mt-0">
+                <p>Use background colour to convey meaning and gradients to create decoration.</p><br>
+                <h4 class="row mt-3">Background color</h4>
+                <p>Set the background of an element to any contextual class, just as the contextual text colour classes.
+                    Because background utilities don't set colour, you'll need to utilise in some instances. colour
+                    utilities for text-*</p>
+                <!-- colors -->
+                <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+                <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+                <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+                <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+                <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+                <div class="p-3 mb-2 bg-info text-dark">.bg-info</div>
+                <div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
+                <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
+                <div class="p-3 mb-2 bg-body text-dark">.bg-body</div>
+                <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
+                <div class="p-3 mb-2 bg-transparent text-dark">.bg-transparent</div>
+            </div>
+        </div>
+        <!-- ---------------------------------- -->
+        <div class="row mt-5">
+            <div class="row mt-3">
+                <h2 id="colors">Colors</h2>
+            </div>
+            <div class="row mt-0">
+                <p>With a few colour utility classes, you can convey meaning through colour. Support for styling links
+                    with hover states is also included.</p><br>
+                <h4 class="row mt-3">Colors</h4>
+                <p>Color utilities can be used to add colour to text. The.link-* auxiliary classes, which have :hover
+                    and :focus states, may be used to colourize links.</p>
+                <!-- colors -->
+                <p class="text-primary">.text-primary</p>
+                <p class="text-secondary">.text-secondary</p>
+                <p class="text-success">.text-success</p>
+                <p class="text-danger">.text-danger</p>
+                <p class="text-warning bg-dark">.text-warning</p>
+                <p class="text-info bg-dark">.text-info</p>
+                <p class="text-light bg-dark">.text-light</p>
+                <p class="text-dark">.text-dark</p>
+                <p class="text-body">.text-body</p>
+                <p class="text-muted">.text-muted</p>
+                <p class="text-white bg-dark">.text-white</p>
+                <p class="text-black-50">.text-black-50</p>
+                <p class="text-white-50 bg-dark">.text-white-50</p>
+            </div>
+        </div>
+        <!-- **************************Layout Section********************** -->
+        <div class="row mt-5">
+            <h2 class="display-4">Layout</h2>
+        </div>
+        <div class="row">
+            <div class="row mt-3">
+                <h2 id="containers">Containers</h2>
+            </div>
+            <div class="row mt-3">
+                <p>Containers are a basic Bootstrap component that contain, pad, and align your content into a certain
+                    device or viewport.<br>
+                    <h3>How they work</h3>
+                    <p>Containers are the most fundamental layout element in Bootstrap, and they're necessary if you
+                        want to use our default grid system. Containers are used to hold, cushion, and (sometimes)
+                        centre the material they contain. Although containers can be nested, nested containers are not
+                        required in most layouts.</p> <br>
+                    <h3>Default Container</h3>
+                    <p>The default .container class is a responsive, fixed-width container, which means its maximum
+                        width varies at each breakpoint.</p>
+
+
+                    <h3>Responsive Containers</h3>
+                    <div class="container-sm">100% wide until small breakpoint</div>
+                    <div class="container-md">100% wide until medium breakpoint</div>
+                    <div class="container-lg">100% wide until large breakpoint</div>
+                    <div class="container-xl">100% wide until extra large breakpoint</div>
+                    <div class="container-xxl">100% wide until extra extra large breakpoint</div>
+
+            </div>
+        </div>
+        <!-- ******************Components**************** -->
+        <div class="row mt-5">
+            <h2 class="display-4">Components</h2>
+        </div>
+        <!--************** NAv Bar ******************-->
+        <div class="row mt-3">
+            <div class="row mt-3">
+                <h4 id="navigationbar">Navigation Bar</h4>
+            </div>
+            <div class="row mt-3">
+                <p>The navbar, Bootstrap's strong, responsive navigation header, has documentation and examples.
+                    Includes branding, navigation, and other features, as well as compatibility for our collapse plugin.
+                </p>
+                <h4>Before getting started with the navbar</h4>
+                <p>For responsive collapsing and colour scheme classes, navbars require a wrapping.navbar
+                    with.navbar-expand-sm|-md|-lg|-xl|-xxl.</p><br>
+                <p>By default, navbars and their contents are fluid. In different methods, change the container to limit
+                    their horizontal width.</p><br>
+                <p>To adjust the spacing and alignment of navbars, use our spacing and flex utility classes.</p><br>
+                <p>Navbars are responsive by default, but you may alter that with ease. Our Collapse JavaScript plugin
+                    is responsible for responsive behaviour.</p><br>
+                <p>Use a nav> element to ensure accessibility, or add a role="navigation" to every navbar to clearly
+                    designate it as a landmark region for assistive technology users if using a more general element
+                    like a div>.</p>
+
+
+            </div>
+            <div class="row mt-3">
+                <div class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a href="#" class="nav-link active">Number 1</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Number 2</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Number 3</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Number 4</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ------------------------------------------ -->
+        <!-- *********************Cards************************** -->
+
+        <div class="row mt-5">
+            <div class="row mt-3">
+                <h2 id="buttons">Buttons</h2>
+            </div>
+            <div class=" row mt-3">
+                <p>With support for various sizes, states, and more, use Bootstrap's custom button designs for actions
+                    in forms, dialogues, and more.</p><br>
+                <h3>For Example</h3>
+                <p>Bootstrap comes with a number of predefined button styles, each with its own semantic purpose and a
+                    few extras for further control.</p>
+                <div>
+                    <button type="button" class="btn btn-primary">Primary</button>
+                    <button type="button" class="btn btn-secondary">Secondary</button>
+                    <button type="button" class="btn btn-success">Success</button>
+                    <button type="button" class="btn btn-danger">Danger</button>
+                    <button type="button" class="btn btn-warning">Warning</button>
+                    <button type="button" class="btn btn-info">Info</button>
+                    <button type="button" class="btn btn-light">Light</button>
+                    <button type="button" class="btn btn-dark">Dark</button>
+
+                    <button type="button" class="btn btn-link">Link</button>
+                </div>
+                <h3>Block Buttons</h3>
+                <p>Using a combination of our display and gap tools, create responsive stacks of full-width, "block buttons" like those in Bootstrap 4. We have far more control over spacing, alignment, and responsive behaviours when we use utilities instead of button particular classes.</p>
+
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary" type="button">Button</button>
+                    <button class="btn btn-primary" type="button">Button</button>
+                  </div>
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+</script>
+
+</body>
+
+</html>
