@@ -1,0 +1,3 @@
+Designing this web portfolio was completely a good experience for me. While I designed this web page, I faced some of blockade. The main problem encountered was, on the alignment navigation bar. I tried a lot in fixing that, still it have some problem. The mobile view and tablet view was working fine, but the desktop view was not proper. I tried to get help from others, still its not perfect. Other than navigation bar, I believe I completed this assignment with no other issues. I hope you would like it.
+Thank you,
+    Nitheesh Shafi Kumar
